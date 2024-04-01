@@ -1,0 +1,467 @@
+@charset "UTF-8";
+
+
+/*---- 共通部分 -----------------------*/
+html {
+    font-size: 100%;
+}
+
+body {
+    line-height: 1.5;
+    color: #4A2002;
+    background-color: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.btn {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0;
+    display: block;
+    letter-spacing: 1rem;
+    font-size: 30px;
+    font-weight: bold;
+    background: #FFFFFF;
+    color: #90B6A5;
+    border: 2px solid #90B6A5;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    color: #FFFFFF;
+    border: 2px solid #90B6A5;
+    background-color: #90B6A5;
+}
+
+/*---- ヘッダー -----------------------*/
+.page-header {
+    background-color: #FFEDAB;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 150px;
+}
+
+.logo {
+    width: 100px;
+    margin-top: 10px;
+}
+
+.header--nav--list {
+    display: flex;
+    font-size: 1.5rem;
+    margin-top: 35px;
+    list-style: none;
+}
+
+.header--nav--list li {
+    margin-left: 80px;
+}
+
+.header--nav--list a {
+    color: #4A2002;
+}
+
+.header--nav--list :hover {
+    color: #FFFFFF;
+}
+
+
+
+/*---- ファーストビュー ----------------*/
+.home--fv {
+    width: 100%;
+    height: auto;
+}
+
+.pc {display: block !important;}
+.sp {display: none !important;}
+
+/*---- スマホ版 -----------------------*/
+@media (max-widge:500px){
+    .pc { display: none !important;}
+    .sp { display: block !important;}
+}
+
+
+/*---- 1段目 About --------------------*/
+.home--about {
+    background-color: rgb(255, 237, 171, 0.2);
+    text-align: center;
+    padding: 100px;
+}
+
+.home--about--tit {
+    padding-bottom: 100px;
+}
+
+.home--about--box {
+    display: flex;
+}
+
+.home--about--box--left {
+    width: 50%;
+}
+
+.home--about--box--right {
+    width: 50%;
+}
+
+.home--about--box--right h3 {
+    font-size: 60px;
+    margin: 10px;
+}
+
+.home--about--box--right h1 {
+    font-size: 40px;
+}
+
+.home--about--box--right p {
+    font-size: 20px;
+}
+
+@media (max-width: 750px) {
+    .home--about--box {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .home--about--box--left {
+        margin-top: 0px;
+        width: 100%;
+    }
+
+    .home--about--box--right {
+        width: 100%;
+    }
+}
+
+
+
+
+/*---- 2段目 Works ---------------------*/
+.home--works {
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 100px;
+}
+
+.home--works--tit {
+    padding-bottom: 100px;
+}
+
+.home--works--section {
+    display: flex;
+}
+
+.home--works--box {
+    width: 50%;
+}
+
+.home--works--img {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.home--works--img:hover {
+    opacity: 0.5;
+}
+
+.home--works--box--contents {
+    text-align: center;
+}
+
+.home--works--box--tit {
+    padding-top: 20px;
+}
+
+.home--works a {
+    padding: 10px;
+}
+
+@media (max-width: 750px) {
+    .home--works--section {
+        display: block;
+        margin: 0 auto;
+    }
+
+}
+
+
+
+/*---- 3枚目 Contact ------------------*/
+.home--contact {
+    background-image:url(../images/home-contact.jpg) ;
+    background-position: right;
+    background-blend-mode: soft-light;
+    background-color: rgb(255, 237, 171, 0.2);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 100px;
+    text-align: center;
+    
+}
+
+.home--contact--tit {
+    max-width: 500px;
+    width: 350px;
+    height: auto;
+    margin: 0 auto;
+    padding: 100px;
+}
+
+.home--contact--section h3 {
+    font-size: 30px;
+    font-weight: lighter;
+    padding-bottom: 50px;
+}
+
+.home--contact--section a {
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 20px;
+    margin: auto;
+}
+
+@media (max-width: 750px) {
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        max-width: 100%;
+    }
+}
+
+
+
+/*---- ABOUT PAGE --------------*/
+.about--tit--img {
+    width: 100%;
+    height: auto;
+}
+
+/*-- 1段目 Profile --------*/
+.about--profile {
+    background-color: rgb(255, 237, 171, 0.2);
+    text-align: center;
+    padding: 100px;
+}
+
+.about--profile--tit {
+    padding-bottom: 100px;
+}
+
+.about--profile--box {
+    display: flex;
+}
+
+.about--profile--box--left {
+    width: 50%;
+}
+
+.about--profile--box--right {
+    width: 50%;
+}
+
+.about--profile--box--right h3 {
+    font-size: 70px;
+}
+
+.about--profile--box--right p {
+    font-size: 30px;
+}
+
+@media (max-width: 750px) {
+    .about--profile--box {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .about--profile--box--left {
+        margin-top: 0px;
+        width: 100%;
+    }
+
+    .about--profile--box--right {
+        width: 100%;
+    }
+}
+
+/*-- 2段目 skill ---------*/
+.about--skill {
+    text-align: center;
+    padding: 100px;
+}
+
+.about--skill--tit {
+    padding-bottom: 100px;
+}
+
+.about--skill--section--box {
+    display: flex;
+}
+
+/*-- 3段目 career --------*/
+.about--career {
+    background-color:rgb(255, 237, 171, 0.2) ;
+    padding: 100px;
+}
+
+.about--career--tit  {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.about--career--section {
+    display: inline-block;
+    padding: 0 25%;
+}
+
+.about--career--section--box {
+    font-size: 30px;
+    display: flex;
+}
+
+.about--career--section--box--right {
+    padding-left: 70px;
+}
+
+
+/*---- WORKS PAGE --------------*/
+.works--tit--img {
+    width: 100%;
+    height: auto;
+}
+
+.works--tit {
+    text-align: center;
+    font-size: 70px;
+    padding-top: 150px;
+}
+
+.works--box {
+    text-align: center;
+}
+
+.works--img {
+    width: 60%;
+    height: auto;
+    padding: 0 300px;
+}
+
+.works--img:hover {
+    opacity: 0.5;
+}
+
+
+@media (max-width: 750px) {
+    .home--works--section {
+        display: block;
+        margin: 0 auto;
+    }
+
+}
+
+
+
+
+/*----CONTACT PAGE -------------*/
+.Contact {
+    background-image: url(../images/contact-bg-pc2.jpeg);
+    background-position: right;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 50px;
+    text-align: left;
+}
+
+.contact--tit--img {
+    max-width: 700px;
+    width: 350px;
+    height: auto;
+    margin: 50px auto;
+    padding: 100px 0;
+}
+
+.contact--form--item--label {
+    width: 100%;
+    font-size: 40px;
+    font-weight: bold;
+    color: #4A2002;
+    margin-bottom: 5px;
+}
+
+.contact--form--item--input {
+    width: 50%;
+    height: 30px;
+    font-size: 20px;
+    border: 2px solid #4A2002;
+    background-color: rgb(255, 255, 255, 0.2);
+    border-radius: 2px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.contact--form--item--textarea {
+    width: 50%;
+    height: 150px;
+    font-size: 20px;
+    border: 2px solid #4A2002;
+    background-color: rgb(255, 255, 255, 0.2);
+    border-radius: 2px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.contact--form--btn {
+    max-width: 350px;
+    width: 100%;
+    margin: 0 20px;
+    margin-top: 50px;
+    padding: 20px 10px;
+    display: block;
+    letter-spacing: 3rem;
+    font-size: 25px;
+    font-weight: bold;
+    background: #FFFFFF;
+    color: #90B6A5;
+    border: 2px solid #90B6A5;
+}
+
+.contact--form--btn:hover {
+    color: #FFFFFF;
+    border: 2px solid #90B6A5;
+    background-color: #90B6A5;
+}
+
+
+/*---- footer ------------------*/
+footer {
+    background: #FFEDAB;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer--logo {
+    max-width: 100px;
+    padding: 0 700px;
+}
+
+footer p {
+    font-size: 0.875rem;
+}
+
