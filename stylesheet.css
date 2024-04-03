@@ -359,27 +359,27 @@ footer {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-}
+    }
 
-.logo {
+    .logo {
     width: 30px;
     margin-top: 5px;
-}
+    }
 
-.wrapper {
+    .wrapper {
     max-width: 100%;
     margin: 0 auto;
     padding: 0 20%;
-}
+    }
 
-.header--nav--list {
+    .header--nav--list {
     display: flex;
     padding: 10px 0;
     list-style: none;
-}
+    }
 
 .header--nav--list li {
-    margin-right: 30px;
+    margin-right: 10px;
 }
 
 .header--nav--list a {
