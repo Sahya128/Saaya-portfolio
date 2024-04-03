@@ -352,6 +352,19 @@ footer {
 -------------------------------------------------------------------------------*/
 @media screen and (max-width: 750px) {
 
+    /*-- btn --*/
+    .btn {
+    max-width: 200px;
+    font-size: 20px;
+    }
+
+    /*-- section--tit --*/
+    .section--tit {
+        width: 60%;
+        margin-top: 50px;
+        margin-bottom:50px;
+    }
+    
     /*-- header --*/
     .page--header {
     background-color: #FFEDAB;
@@ -493,7 +506,7 @@ footer {
     }
 
     .works--box img {
-        width: 80%;
+        width: 100%;
     }
 
     /*-- contact --*/
