@@ -162,7 +162,7 @@ img {
 
 /*-- HOME--CONTACT -------------------------------------*/
 .home--contact {
-    background-image: url(../images/home-contact.jpg);
+    background-image: url(https://sahya128.github.io/Saaya-portfolio/home-contact.jpg);
     background-position: right;
     background-size: 100%;
     width: 100%;
@@ -276,7 +276,7 @@ img {
 
 /*-- CONTACT ---------------------------------------------*/
 .Contact {
-    background-image: url(../images/contact-bg-pc2.jpeg);
+    background-image: url(https://sahya128.github.io/Saaya-portfolio/contact-bg-pc2.jpeg);
     background-position: right;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -462,7 +462,7 @@ footer {
 
     /*-- contact --*/
     .Contact {
-        background-image: url(../images/contact-bg-sp.jpeg);
+        background-image: url(https://sahya128.github.io/Saaya-portfolio/contact-bg-sp.jpeg);
         background-position: bottom;
         background-size: 100%;
         background-repeat: no-repeat;
