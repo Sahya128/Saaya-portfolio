@@ -101,11 +101,6 @@ img {
     height: auto;
 }
 
-.pc {display: block !important;}
-.sp {display: none !important;}
-
-
-
 /*-- HOME--ABOUT ----------------------------------------------*/
 .home--about {
     background-color: rgba(255, 237, 171, 20%);
