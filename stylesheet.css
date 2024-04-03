@@ -373,14 +373,14 @@ footer {
     padding: 2rem; 
     position: absolute;
     transform: translateX(-100%);
-    transition: 0.3s; 
+    transition: 0.5s; 
     top: 100%;
     width: 100%;
-  }
+    }
 
   #hamburger:checked ~ .c-hamburger-menu__list {
     transform: translateX(0%);
-    transition: 0.3s;
+    transition: 0.5s;
   }
 
 .c-hamburger-menu__input {
@@ -388,11 +388,11 @@ footer {
 }
 
 .c-hamburger-menu__bg {
-  background-color: #FFEDAB; 
+  background-color: rgb(255, 255, 255, 0.2); 
   cursor: pointer;
   display: none;
   height: 100vh;
-  left: 0;
+  left: 10px;
   opacity: 0.4; 
   position: absolute;
   top: 0;
@@ -424,7 +424,7 @@ footer {
 
 
 .c-hamburger-menu__button-mark {
-  background-color: #FFEDAB; 
+  background-color: #4A2002; 
   display: block;
   height: 1px; 
   transition: 0.3s; 
@@ -440,7 +440,7 @@ footer {
   #hamburger:checked
     ~ .c-hamburger-menu__button
     .c-hamburger-menu__button-mark:nth-of-type(2) {
-    opacity: 0;
+    opacity: 0.2;
   }
   #hamburger:checked
     ~ .c-hamburger-menu__button
