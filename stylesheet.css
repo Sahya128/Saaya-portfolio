@@ -7,9 +7,8 @@ html {
 }
 
 body {
-    line-height: 1.5;
     color: #4A2002;
-    background-color: #FFFFFF;
+    font-size: 1rem;
 }
 
 a {
@@ -18,6 +17,22 @@ a {
 
 img {
     max-width: 100%;
+}
+
+.section--tit {
+    display: inline-block;
+    width: 80%;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0 4%;
+    text-align: center;
 }
 
 .btn {
@@ -29,58 +44,61 @@ img {
     letter-spacing: 1rem;
     font-size: 30px;
     font-weight: bold;
-    background: #FFFFFF;
+    background-color: #fff;
     color: #90B6A5;
     border: 2px solid #90B6A5;
     margin-top: 20px;
-}
+} 
 
 .btn:hover {
-    color: #FFFFFF;
+    color: #fff;
     border: 2px solid #90B6A5;
     background-color: #90B6A5;
 }
 
-/*---- ヘッダー -----------------------*/
-.page-header {
+
+/*-- Header area -------------------------------------*/
+.page--header {
     background-color: #FFEDAB;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 70px;
+    margin-top: 10px;
 }
 
 .wrapper {
     max-width: 100%;
     margin: 0 auto;
-    padding: 0 150px;
-}
-
-.logo {
-    width: 100px;
-    margin-top: 10px;
+    padding: 0 20%;
 }
 
 .header--nav--list {
     display: flex;
-    font-size: 1.5rem;
-    margin-top: 35px;
+    padding: 10px 0;
     list-style: none;
 }
 
 .header--nav--list li {
-    margin-left: 80px;
+    margin-left: 30px;
 }
 
 .header--nav--list a {
     color: #4A2002;
 }
 
-.header--nav--list :hover {
-    color: #FFFFFF;
+.header--nav--list a:hover {
+    opacity: 0.5;
 }
 
 
 
-/*---- ファーストビュー ----------------*/
+
+/*-- HOME--FV ------------------------------------------------*/
 .home--fv {
     width: 100%;
     height: auto;
@@ -89,241 +107,134 @@ img {
 .pc {display: block !important;}
 .sp {display: none !important;}
 
-/*---- スマホ版 -----------------------*/
-@media (max-widge:500px){
-    .pc { display: none !important;}
-    .sp { display: block !important;}
-}
 
 
-/*---- 1段目 About --------------------*/
+/*-- HOME--ABOUT ----------------------------------------------*/
 .home--about {
-    background-color: rgb(255, 237, 171, 0.2);
-    text-align: center;
-    padding: 100px;
-}
-
-.home--about--tit {
-    padding-bottom: 100px;
+    background-color: rgba(255, 237, 171, 20%);
+    width: 100%;
+    height: 750px;
 }
 
 .home--about--box {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.home--about--box--left {
-    width: 50%;
+.home--about--box img {
+    width: 400px;
+    height: auto;
+    margin-right: 50px;
 }
 
 .home--about--box--right {
-    width: 50%;
+    text-align: center;
 }
 
 .home--about--box--right h3 {
-    font-size: 60px;
-    margin: 10px;
+    font-size: 40px;
 }
 
 .home--about--box--right h1 {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .home--about--box--right p {
     font-size: 20px;
 }
 
-@media (max-width: 750px) {
-    .home--about--box {
-        display: block;
-        margin: 0 auto;
-    }
-
-    .home--about--box--left {
-        margin-top: 0px;
-        width: 100%;
-    }
-
-    .home--about--box--right {
-        width: 100%;
-    }
-}
-
-
-
-
-/*---- 2段目 Works ---------------------*/
+/*-- HOME--WORKS ---------------------------------------*/
 .home--works {
-    background-color: #FFFFFF;
-    text-align: center;
-    padding: 100px;
-}
-
-.home--works--tit {
-    padding-bottom: 100px;
+    width: 100%;
+    height: 800px;
 }
 
 .home--works--section {
     display: flex;
+    justify-content: space-between;
 }
 
 .home--works--box {
-    width: 50%;
+    width: 25%;
+    margin-bottom: 50px;
 }
 
-.home--works--img {
-    max-width: 350px;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-}
-
-.home--works--img:hover {
-    opacity: 0.5;
-}
-
-.home--works--box--contents {
-    text-align: center;
-}
-
-.home--works--box--tit {
-    padding-top: 20px;
-}
-
-.home--works a {
-    padding: 10px;
-}
-
-@media (max-width: 750px) {
-    .home--works--section {
-        display: block;
-        margin: 0 auto;
-    }
-
-}
-
-
-
-/*---- 3枚目 Contact ------------------*/
+/*-- HOME--CONTACT -------------------------------------*/
 .home--contact {
-    background-image:url(https://sahya128.github.io/Saaya-portfolio/home-contact.jpg) ;
+    background-image: url(../images/home-contact.jpg);
     background-position: right;
-    background-blend-mode: soft-light;
-    background-color: rgb(255, 237, 171, 0.2);
     background-size: 100%;
-    background-repeat: no-repeat;
-    padding: 100px;
-    text-align: center;
-    
-}
-
-.home--contact--tit {
-    max-width: 500px;
-    width: 350px;
-    height: auto;
-    margin: 0 auto;
-    padding: 100px;
+    width: 100%;
+    height: 600px;
 }
 
 .home--contact--section h3 {
-    font-size: 30px;
-    font-weight: lighter;
-    padding-bottom: 50px;
+   font-size: 30px;
+   padding-bottom: 50px;
 }
 
 .home--contact--section a {
     font-size: 20px;
-    letter-spacing: 1px;
-    padding: 20px;
-    margin: auto;
-}
-
-@media (max-width: 750px) {
-
-    input[type="text"],
-    input[type="email"],
-    textarea {
-        max-width: 100%;
-    }
+    letter-spacing: 0.2rem;
 }
 
 
-
-/*---- ABOUT PAGE --------------*/
+/*-- ABOUT ----------------------------------------------*/
 .about--tit--img {
     width: 100%;
     height: auto;
 }
 
-/*-- 1段目 Profile --------*/
+/*-- ABOUT--PLOFILE -------------------------------------*/
 .about--profile {
-    background-color: rgb(255, 237, 171, 0.2);
-    text-align: center;
-    padding: 100px;
-}
-
-.about--profile--tit {
-    padding-bottom: 100px;
+    background-color: rgba(255, 237, 171, 20%);
+    width: 100%;
+    height: 600px;
 }
 
 .about--profile--box {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.about--profile--box--left {
-    width: 50%;
+.about--profile--box img {
+    width: 400px;
+    height: auto;
+    margin-right: 50px;
 }
 
 .about--profile--box--right {
-    width: 50%;
+    text-align: center;
 }
 
 .about--profile--box--right h3 {
-    font-size: 70px;
+    font-size: 40px;
 }
 
 .about--profile--box--right p {
-    font-size: 30px;
+    font-size: 20px;
 }
 
-@media (max-width: 750px) {
-    .about--profile--box {
-        display: block;
-        margin: 0 auto;
-    }
 
-    .about--profile--box--left {
-        margin-top: 0px;
-        width: 100%;
-    }
-
-    .about--profile--box--right {
-        width: 100%;
-    }
-}
-
-/*-- 2段目 skill ---------*/
+/*-- ABOUT--SKILL ---------------------------------------*/
 .about--skill {
-    text-align: center;
     padding: 100px;
-}
-
-.about--skill--tit {
-    padding-bottom: 100px;
 }
 
 .about--skill--section--box {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/*-- 3段目 career --------*/
+
+/*-- ABOUT--CAREER ---------------------------------------*/
 .about--career {
-    background-color:rgb(255, 237, 171, 0.2) ;
-    padding: 100px;
-}
-
-.about--career--tit  {
-    text-align: center;
-    padding-bottom: 100px;
+    background-color: rgba(255, 237, 171, 20%);
+    width: 100%;
+    height: 600px;
 }
 
 .about--career--section {
@@ -337,30 +248,25 @@ img {
 }
 
 .about--career--section--box--right {
-    padding-left: 70px;
+   padding-left: 70px;
+   text-align: left;
 }
 
 
-/*---- WORKS PAGE --------------*/
+/*-- WORKS -----------------------------------------------*/
 .works--tit--img {
     width: 100%;
     height: auto;
 }
 
-.works--tit {
-    text-align: center;
-    font-size: 70px;
-    padding-top: 150px;
-}
-
 .works--box {
-    text-align: center;
+    align-items: center;
 }
 
 .works--img {
     width: 60%;
     height: auto;
-    padding: 0 300px;
+    padding: 0 250px;
 }
 
 .works--img:hover {
@@ -368,20 +274,9 @@ img {
 }
 
 
-@media (max-width: 750px) {
-    .home--works--section {
-        display: block;
-        margin: 0 auto;
-    }
-
-}
-
-
-
-
-/*----CONTACT PAGE -------------*/
+/*-- CONTACT ---------------------------------------------*/
 .Contact {
-    background-image: url(https://sahya128.github.io/Saaya-portfolio/contact-bg-pc2.jpeg);
+    background-image: url(../images/contact-bg-pc2.jpeg);
     background-position: right;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -390,19 +285,14 @@ img {
 }
 
 .contact--tit--img {
-    max-width: 700px;
-    width: 350px;
-    height: auto;
-    margin: 50px auto;
-    padding: 100px 0;
+    margin-bottom: 200px;
 }
 
 .contact--form--item--label {
     width: 100%;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     color: #4A2002;
-    margin-bottom: 5px;
 }
 
 .contact--form--item--input {
@@ -430,13 +320,13 @@ img {
 .contact--form--btn {
     max-width: 350px;
     width: 100%;
-    margin: 0 20px;
-    margin-top: 50px;
+    margin: 0 10px;
     padding: 20px 10px;
     display: block;
-    letter-spacing: 3rem;
-    font-size: 25px;
+    letter-spacing: 1.5rem;
+    font-size: 30px;
     font-weight: bold;
+    text-align: center;
     background: #FFFFFF;
     color: #90B6A5;
     border: 2px solid #90B6A5;
@@ -449,19 +339,169 @@ img {
 }
 
 
-/*---- footer ------------------*/
+/*-- FOOTER ----------------------------------------------*/
 footer {
-    background: #FFEDAB;
-    text-align: center;
+    background-color: #FFEDAB;
+    width: 100%;
+    height: 30px;
+    font-size: 0.5rem;
     padding: 10px 0;
+    text-align: center;
 }
 
-.footer--logo {
-    max-width: 100px;
-    padding: 0 700px;
-}
 
-footer p {
-    font-size: 0.875rem;
-}
 
+/*--SP
+-------------------------------------------------------------------------------*/
+@media screen and (max-width: 600px) {
+
+    /*-- home--fv --*/
+    .home--fv {
+        .pc { display: none !important;}
+        .sp { display: block !important;}
+    }
+   
+    /*-- home--about --*/
+    .home--about--box {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .home--about--box--left {
+        margin-top: 0px;
+        width: 100%;
+    }
+
+    .home--about--box--right {
+        width: 100%;
+    }
+
+    .home--about--box--right h3 {
+        font-size: 20px;
+    }
+    
+    .home--about--box--right h1 {
+        font-size: 15px;
+    }
+
+    .home--about--box--right p {
+        font-size: 10px;
+    }
+
+    /*-- home--works --*/
+    .home--works--section {
+        display: block;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .home--works--box {
+        width: 70%;
+    }
+
+    /*-- home--contact --*/
+    .home--contact--section h3 {
+        font-size: 20px;
+    }
+
+    .home--contact--section a {
+        font-size: 10px;
+    }
+
+    
+    /*-- about--profile --*/
+    .about--profile--box {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .about--profile--box--left {
+        margin-top: 0px;
+        width: 100%;
+    }
+
+    .about--profile--box--right {
+        width: 100%;
+    }
+
+    .about--profile--box--right h3 {
+        font-size: 30px;
+    }
+
+    .about--profile--box--right p {
+        font-size: 15px;
+    }
+
+    /*-- about--skill --*/
+    .about--skill--section--box {
+        display: block;
+        margin: 0 auto;
+    }
+
+    /*-- about--career --*/
+    .about--career--section--box {
+        font-size: 10px;
+    }
+    .about--career--section--box--right {
+        padding-left: 15px;
+    }
+
+    /*-- works --*/
+    .works--box {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .works--tit .section--tit{
+        font-size: 30px;
+    }
+
+    .works--box img {
+        width: 80%;
+    }
+
+    /*-- contact --*/
+    .Contact {
+        background-image: url(../images/contact-bg-sp.jpeg);
+        background-position: bottom;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .contact--form--item--label {
+        font-size: 20px;
+    }
+    .contact--form--item--input {
+        height: 20px;
+        font-size: 15px;
+        padding: 5px;
+        margin-bottom: 20px;
+    }
+    
+    .contact--form--item--textarea {
+        width: 70%;
+        height: 60px;
+        font-size: 15px;
+        padding: 5px;
+        margin-bottom: 20px;
+    }
+
+    .contact--form--btn {
+        max-width: 250px;
+        width: 50%;
+        margin: 0 10px;
+        margin-top: 25px;
+        padding: 10px 5px;
+        display: block;
+        letter-spacing: 2rem;
+        font-size: 15px;
+    }
+    
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        max-width: 100%;
+    }
+
+}
