@@ -444,6 +444,12 @@ footer {
     }
 
     /*-- home--contact --*/
+    .home--contact {
+    background-size: 100%;
+    width: 100%;
+    height: 400px;
+    }
+    
     .home--contact--section h3 {
         font-size: 20px;
     }
