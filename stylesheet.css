@@ -355,6 +355,12 @@ footer {
 -------------------------------------------------------------------------------*/
 @media screen and (max-width: 600px) {
 
+    /*-- header --*/
+    .logo {
+    width: 30px;
+    margin-top: 5px;
+    }
+
     /*-- home--fv --*/
     .home--fv {
         .pc { display: none !important;}
