@@ -158,7 +158,7 @@ img {
     background-position: right;
     background-size: 100%;
     width: 100%;
-    height: 600px;
+    height: 400px;
 }
 
 .home--contact--section h3 {
@@ -386,25 +386,18 @@ footer {
     list-style: none;
     }
 
-.header--nav--list li {
+    .header--nav--list li {
     margin-right: 10px;
-}
-
-.header--nav--list a {
-    color: #4A2002;
-}
-
-.header--nav--list a:hover {
-    opacity: 0.5;
-}
-
-    
-    /*-- home--fv --*/
-    .home--fv {
-        .pc { display: none !important;}
-        .sp { display: block !important;}
     }
-   
+
+    .header--nav--list a {
+    color: #4A2002;
+    }
+
+    .header--nav--list a:hover {
+    opacity: 0.5;
+    }
+
     /*-- home--about --*/
     .home--about--box {
         display: block;
